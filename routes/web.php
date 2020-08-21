@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::match(['get','post'],'/',['uses'=>'MainController@index','as'=>'index']);
+Route::match(['get','post'],'/main/{locale?}',['uses'=>'MainController@index','as'=>'index']);
 Route::post('/req',['uses'=>'MainController@getInfo','as'=>'req']);
 
 

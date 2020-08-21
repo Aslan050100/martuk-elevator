@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
@@ -67,16 +67,16 @@
                 <a href="#"><img src="{{ asset('assets/images/logo123.png') }}" style="width: 15%;height: 15%; padding-top: 15px;"></a>
             </div>
             <div class="links">
-                <a data-target="anchor" href="#main">Главная</a>
-                <a data-target="anchor" href="#history">История</a>
-                <a data-target="anchor" href="#price">Прайс</a>
-                <a data-target="anchor" href="#contacts">Контакты</a>
-                <a data-target="anchor" href="#vacancy">Вакансии</a>
+                <a data-target="anchor" href="#main">{{__('message.glav')}}</a>
+                <a data-target="anchor" href="#history">{{__('message.history')}}</a>
+                <a data-target="anchor" href="#price">{{__('message.price')}}</a>
+                <a data-target="anchor" href="#contacts">{{__('message.contact')}}</a>
+                <a data-target="anchor" href="#vacancy">{{__('message.vacancy')}}</a>
             </div>
             <div class="language">
-                <a href="">Ru</a>
-                <a href="">En</a>
-                <a href="">Kz</a>
+                <a href="{{route(Route::currentRouteName(),'ru')}}">Ru</a>
+                <a href="{{route(Route::currentRouteName(),'en')}}">En</a>
+                <a href="{{route(Route::currentRouteName(),'kz')}}">Kz</a>
             </div>
 
         </nav>
@@ -84,16 +84,16 @@
     </div>
 
     <h1>
-        Мартукский элеватор
+       {{__('message.welcome')}}
     </h1>
     <h2>
-        Хранение и отправка зерновых культур
+        {{__('message.desc')}}
     </h2>
 </header>
 
 <div class="section2">
     <h2 id="history">
-        О компании
+        {{__('message.company')}}
     </h2>
 
     <div class="container">
@@ -101,10 +101,10 @@
             <div class="centering_v2">
 
                 <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jrTMMG0zJyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6IJborZvwMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {{__('message.description')}}
                 </div>
 
             </div>
@@ -119,7 +119,7 @@
 
 <div class="section3">
     <h2 id="price">
-        Наши услуги и цены
+       {{__('message.uslugi')}}
     </h2>
     <div class="sec6_back">
 
@@ -131,69 +131,70 @@
         <div class="uslugi">
             <div class="usluga">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif1')}}
                 </p>
                 <div class="price">
-                    От 90000 ₸
+                    900 тг
                 </div>
             </div>
 
             <div class="usluga">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif2')}}
                 </p>
                 <div class="price">
-                    От 90000 ₸
+                    900 тг
                 </div>
             </div>
 
             <div class="usluga">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif3')}}
                 </p>
                 <div class="price">
-                    От 90000 ₸
+                    507 тг
                 </div>
             </div>
 
             <div class="usluga">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif4')}}
                 </p>
                 <div class="price">
-                    От 90000 ₸
+                    200 тг
                 </div>
             </div>
 
             <div class="usluga">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif5')}}
                 </p>
                 <div class="price">
-                    От 90000 ₸
+                    400 тг
                 </div>
             </div>
 
             <div class="usluga last">
                 <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
-                <h4>Хранение</h4>
+                <h4></h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    {{__('message.tarif6')}}
                 </p>
-                <div class="price">
-                    От 90000 ₸
+                <div class="price">ю№э
+                    800 тг
                 </div>
             </div>
+
 
         </div>
     </div>
@@ -201,7 +202,7 @@
 
 <div class="section4">
     <h2>
-        Наши партнеры
+        {{__('message.parther')}}
     </h2>
 
     <div class="container">
@@ -275,31 +276,31 @@
     </div>
 </div>
 
-<div class="section5">
-    <h2 id="vacancy">
-        Вакансии
-    </h2>
+{{--<div class="section5">--}}
+{{--    <h2 id="vacancy">--}}
+{{--        Вакансии--}}
+{{--    </h2>--}}
 
-    <div class="container">
-        @foreach($vacancies as $vacancy)
-        <div class="list">
-            <div class="for_photo">
-                <img src="{{Voyager::image($vacancy->image)}}"  class="img-responsive img-thumbnail">
-            </div>
-            <div class="hired">
-                {{$vacancy->name}}
-            </div>
-            <div class="prof_desc">
-                {{$vacancy->description}}
-            </div>
-        </div>
-        @endforeach
-    </div>
+{{--    <div class="container">--}}
+{{--        @foreach($vacancies as $vacancy)--}}
+{{--        <div class="list">--}}
+{{--            <div class="for_photo">--}}
+{{--                <img src="{{Voyager::image($vacancy->image)}}"  class="img-responsive img-thumbnail">--}}
+{{--            </div>--}}
+{{--            <div class="hired">--}}
+{{--                {{$vacancy->name}}--}}
+{{--            </div>--}}
+{{--            <div class="prof_desc">--}}
+{{--                {{$vacancy->description}}--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        @endforeach--}}
+{{--    </div>--}}
 
-    <form class="more_vacancy">
-        <button>Больше Вакансии</button>
-    </form>
-</div>
+{{--    <form class="more_vacancy">--}}
+{{--        <button>Больше Вакансии</button>--}}
+{{--    </form>--}}
+{{--</div>--}}
 
 
 
@@ -310,7 +311,7 @@
     <div class="sec6_back2">
         <img src="{{ asset('assets/images/wheat.jpg') }}">
     </div>
-    <h2>Где мы находимся?</h2>
+    <h2>{{__('message.mesto')}}</h2>
     <div class="container">
         <div class="for_map ontop">
             <div class="address left">
@@ -327,21 +328,21 @@
                         </svg>
 
                     </div>
-                    <span>Казахстан</span>
+                    <span>{{__('message.country')}}</span>
                 </div>
                 <div class="desc">
-                    г. Актюбе, такой то такой  то адрес
+                    {{__('message.city')}}
                 </div>
                 <div class="number">
-                    <a href="tel:+7 777 777-77-77">+7 (777) 777-77-77</a>
+                    <a href="tel:+7 713 313 19-79">8 (71331) 31-9-79</a>
                 </div>
             </div>
             <div class="map right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.859873020235!2d57.22883161560909!3d50.27587497945167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x418221482862b8f7%3A0x6f36f17ef86ce51b!2z0KDQsNC80LDQt9Cw0L0!5e0!3m2!1sru!2skz!4v1596710491893!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6361.279871864365!2d56.505451741196886!3d50.748207148116094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4178b1140cf3b2d3%3A0x7caab34a7c481ba5!2z0YPQu9C40YbQsCDQldGB0LXRgtCwINCa0L7QutC10YPQu9GLLCDQnNCw0YDRgtGD0Lo!5e0!3m2!1sru!2skz!4v1597053975795!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></iframe>            </div>
         </div>
         <div class="for_map">
             <div class="map left">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.859873020235!2d57.22883161560909!3d50.27587497945167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x418221482862b8f7%3A0x6f36f17ef86ce51b!2z0KDQsNC80LDQt9Cw0L0!5e0!3m2!1sru!2skz!4v1596710491893!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.859873020235!2d57.22883161560909!3d50.27587497945167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x418221482862b8f7%3A0x6f36f17ef86ce51b!2z0KDQsNC80LDQt9Cw0L0!5e0!3m2!1sru!2skz!4v1596710491893!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="address right">
                 <div class="country">
@@ -357,13 +358,13 @@
                         </svg>
 
                     </div>
-                    <span>Россия</span>
+                    <span>{{__('message.country')}}</span>
                 </div>
                 <div class="desc">
-                    г. Актюбе, такой то такой  то адрес
+                    {{__('message.city2')}}
                 </div>
                 <div class="number">
-                    <a href="tel:+7 777 777-77-77">+7 (777) 777-77-77</a>
+                    <a href="tel:+7 713 313 19-79">8 (71331) 31-9-79</a>
                 </div>
             </div>
 
@@ -376,15 +377,15 @@
 <div class="section7">
     <div class="container">
         <div class="contacts">
-            <h5 id="contacts">Контакты</h5>
+            <h5 id="contacts">{{__('message.contact')}}</h5>
             <div class="obertka">
 
                 <div class="telephone">
-                    <div>Телефон</div>
-                    <a href="tel:+7 777 777-77-77">+7 (777) 777-77-77</a>
+                    <div>{{__('message.phone')}}</div>
+                    <a href="tel:+7 713 313 19-79">8 (71331) 31-9-79</a>
                 </div>
                 <div class="telephone">
-                    <div>Наши соц сети</div>
+                    <div>{{__('message.social')}}</div>
                     <div class="social_media">
                         <a href=""><img src="{{ asset('assets/images/facebook.png') }}"></a>
                         <a href=""><img src="{{ asset('assets/images/instagram.png') }}"></a>
@@ -393,22 +394,22 @@
                 </div>
                 <div class="telephone last">
                     <div>E-mail</div>
-                    <a href="mailto:support@gmail.com">support@gmail.com</a>
+                    <a href="mailto:Martuk.ramazan@mail.ru">Martuk.ramazan@mail.ru</a>
                 </div>
 
             </div>
         </div>
         <div class="obratnaya_svyaz">
-            <h5>Есть вопросы?
+            <h5>{{__('message.question')}}
             </h5>
-            <p>Оставьте свои данные и мы с вами свяжемся</p>
+            <p>{{__('message.feedback_desc')}}</p>
             <form class="info"  method="post" action="{{route('req')}}">
                 {{ csrf_field() }}
-                <input type="text" name="name" placeholder="Ваше Имя">
-                <input id="phone" type="tel" name="phone" placeholder="Ваш номер телефона">
-                <textarea name="text">Ваше сообщение</textarea>
+                <input type="text" name="name" placeholder="{{__('message.in_name')}}">
+                <input id="phone" type="tel" name="phone" placeholder="{{__('message.in_phone')}}">
+                <textarea name="text" placeholder="{{__('message.in_message')}}"></textarea>
                 <div class="send">
-                    <button type="submit" name="submit">Отправить</button>
+                    <button type="submit" name="submit">{{__('message.send')}}</button>
                 </div>
             </form>
         </div>
@@ -445,7 +446,7 @@
     $(function(){
         $('a[data-target^="anchor"]').bind('click.smoothscroll', function(){
             var target = $(this).attr('href'),
-                bl_top = $(target).offset().top - 50;
+                bl_top = $(target).offset().top - 120;
             $('body, html').animate({scrollTop: bl_top}, 1100);
             return false ;
 

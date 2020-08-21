@@ -3,43 +3,249 @@
 @media screen and (max-width: 1366px) {}
 @media screen and (max-width: 1200px) {}
 @media screen and (max-width: 1024px) {
+    header {
+        background-size: cover;
+        background-position: 50%;
+    }
     /*.modal-dialog { width: 90%;  }*/
 }
 @media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
-    
+    .uslugi {
+        flex-wrap: wrap;
+    }
+
+    .usluga {
+        width: 26%;
+        margin-bottom: 20px;
+    }
+
+    .section5 .container {
+        flex-wrap: wrap;
+    }
+
+    .list {
+        width: 40%;
+        /* margin-bottom: 100px; */
+    }
+
+    .list:nth-child(1) {
+        margin-bottom:100px;
+    }
+    .list:nth-child(2) {
+        margin-bottom:100px;
+    }
+
+    header#main {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .section7 .container {
+        flex-direction: column;
+    }
+
+    .section7 {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .contacts {
+        width: 90%;
+    }
+
+    .obratnaya_svyaz {
+        width: 90%;
+        margin-top: 25px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     .modal-body {
         flex-direction: column;
-      
+
     }
-    
+
     .mimage {
         display: none;
     }
     /*
     .modal-body > form {
         width: 100%;
-    } 
-    
+    }
+
     .modal-body > form button.close {
         position: static;
     }
-    
+
     div#text3 {
         padding-top: 2rem;
     }
-    
+
     .mimage img {
         max-height: 148px;
     }
-	*/
+    */
 }
-@media screen and (max-width: 425px) {}
+@media screen and (max-width: 425px) {
+    .centering_v2 {flex-direction: column;}
+
+    .absolution {
+        display: none;
+    }
+
+    .centering_v2 {}
+
+    .video {
+        width: 100%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .centering {
+        height: auto;
+    }
+
+    .section2 .container {
+        margin-bottom: 0;
+    }
+
+    .uslugi {}
+
+    .usluga {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hexagon_out {
+        text-align: center;
+    }
+
+    .usluga.last {
+        margin: 0;
+    }
+
+    .section4 {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .list {
+        width: 80%;
+    }
+
+    .list:nth-child(3) {
+        margin-bottom: 100px;
+    }
+
+    .for_map {
+        flex-direction: column;
+    }
+
+    .address {
+        position: static;
+        top: 0;
+        transform: none;
+    }
+
+    .map {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .map.left {
+        margin-top: 0;
+    }
+
+    .address.right {
+        margin-top: 25px;
+    }
+
+    .for_map {
+        margin-bottom: 50px;
+    }
+
+    .for_map.ontop {
+        margin-bottom: 75px;
+    }
+
+    div#long {
+        display: none;
+    }
+
+    .usluga h4 {
+        margin-top: 21px;
+    }
+
+    h1 {
+        letter-spacing: inherit;
+    }
+
+    .video {
+        height: 248px;
+    }
+    .obratnaya_svyaz {
+        width: 100%;
+    }
+
+    .obratnaya_svyaz {
+        padding: 50px 10px;
+    }
+
+    form.send button {padding: 9px 100px;}
+    h1 {
+        text-align: center;
+    }
+
+    .usluga:after {
+        display: none;
+    }
+
+
+
+
+}
 @media screen and (max-width: 411px) {}
 @media screen and (max-width: 375px) {}
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+    .list {
+        width: 90%;
+    }
+
+    .address {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .obertka {
+        font-size: 14px;
+    }
+
+    .telephone {
+        width: 100%;
+    }
+
+    .obertka div {
+        /* margin-bottom: 10px; */
+    }
+
+    .telephone {
+        margin-bottom: 25px;
+    }
+
+    .telephone.last {}
+
+    form.send button {
+        padding: 9px 70px;
+    }
+
+}
 @media screen and (max-width: 320px) {}
