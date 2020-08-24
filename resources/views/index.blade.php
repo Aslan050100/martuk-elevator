@@ -57,6 +57,24 @@
 
 <body>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a data-target="anchor" onclick="closeNav()" href="#main">{{__('message.glav')}}</a>
+    <a data-target="anchor" onclick="closeNav()" href="#history">{{__('message.history')}}</a>
+    <a data-target="anchor" onclick="closeNav()" href="#price">{{__('message.price')}}</a>
+    <a data-target="anchor" onclick="closeNav()" href="#contacts">{{__('message.contact')}}</a>
+{{--    <a data-target="anchor" onclick="closeNav()" href="#vacancy">{{__('message.vacancy')}}</a>--}}
+
+
+    <div class="language">
+        <a href="{{route(Route::currentRouteName(),'ru')}}">Ru</a>
+        <a href="{{route(Route::currentRouteName(),'en')}}">En</a>
+        <a href="{{route(Route::currentRouteName(),'kz')}}">Kz</a>
+    </div>
+</div>
+
+
+<span class="opennav" style="cursor:pointer" onclick="openNav()">&#9776;</span>
 
 
 <header id="main">
@@ -130,7 +148,9 @@
     <div class="container">
         <div class="uslugi">
             <div class="usluga">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/2.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif1')}}
@@ -141,7 +161,9 @@
             </div>
 
             <div class="usluga">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/3.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif2')}}
@@ -152,7 +174,9 @@
             </div>
 
             <div class="usluga">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/4.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif3')}}
@@ -163,7 +187,9 @@
             </div>
 
             <div class="usluga">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/5.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif4')}}
@@ -174,7 +200,9 @@
             </div>
 
             <div class="usluga">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/6.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif5')}}
@@ -185,12 +213,40 @@
             </div>
 
             <div class="usluga last">
-                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>   </div>
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/8.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
                 <h4></h4>
                 <p>
                     {{__('message.tarif6')}}
                 </p>
-                <div class="price">ю№э
+                <div class="price">
+                    800 тг
+                </div>
+            </div>
+
+            <div class="usluga last">
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/7.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
+                <h4></h4>
+                <p>
+                    {{__('message.tarif7')}}
+                </p>
+                <div class="price">
+                    800 тг
+                </div>
+            </div>
+
+            <div class="usluga last">
+                <div class="hexagon_out"><div class="hexagon hexagon2"><div class="hexagon-in1"><div class="hexagon-in2">
+                                <img src="{{ asset('assets/images/9.png') }}" style="position:relative;">
+                            </div></div></div>   </div>
+                <h4></h4>
+                <p>
+                    {{__('message.tarif8')}}
+                </p>
+                <div class="price">
                     800 тг
                 </div>
             </div>
@@ -210,47 +266,12 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="company">
-                        <img src="{{ asset('assets/images/mycomp.png') }}" alt="company">
+                        <img src="{{ asset('assets/images/10.png') }}" alt="company" style="position: relative;bottom:22px;">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="company">
-                        <img src="{{ asset('assets/images/newcrest.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/livelib.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/mycomp.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/newcrest.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/livelib.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/mycomp.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/newcrest.png') }}" alt="company">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="company">
-                        <img src="{{ asset('assets/images/livelib.png') }}" alt="company">
+                        <img src="{{ asset('assets/images/11.png') }}" alt="company" style="position: relative;bottom:-10px;">
                     </div>
                 </div>
             </div>
@@ -261,8 +282,6 @@
 
         <script>
             var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
-                spaceBetween: 40,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
@@ -271,6 +290,20 @@
                 autoplay: {
                     delay: 5000,
                 },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 40
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 40
+                    },
+                    780: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    }
+                }
             });
         </script>
     </div>
@@ -399,14 +432,15 @@
 
             </div>
         </div>
+{{--       "/mail_send.php" --}}
         <div class="obratnaya_svyaz">
             <h5>{{__('message.question')}}
             </h5>
             <p>{{__('message.feedback_desc')}}</p>
             <form class="info"  method="post" action="{{route('req')}}">
                 {{ csrf_field() }}
-                <input type="text" name="name" placeholder="{{__('message.in_name')}}">
-                <input id="phone" type="tel" name="phone" placeholder="{{__('message.in_phone')}}">
+                <input type="text" name="name" placeholder="{{__('message.in_name')}}" required>
+                <input id="phone" type="tel" name="phone" placeholder="{{__('message.in_phone')}}" required>
                 <textarea name="text" placeholder="{{__('message.in_message')}}"></textarea>
                 <div class="send">
                     <button type="submit" name="submit">{{__('message.send')}}</button>
@@ -465,6 +499,15 @@
             document.getElementById("long").style.height = "60px";
             document.getElementById("long").style.background = "transparent";
         }
+    }
+
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
     }
 </script>
 
